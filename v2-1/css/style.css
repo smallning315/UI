@@ -1,0 +1,58 @@
+		*{
+            font-family: 微軟正黑體;
+		}
+
+        h1{
+			text-align: center;
+			padding: 20px;
+		}
+        
+		main{
+            margin: 0 auto;
+			width: 120px;
+			background: #000;
+			padding: 10px;
+		}
+
+		#red{
+			display: inline-block;
+			width:100px;
+			height:100px;
+			background-color:red;
+            opacity:0.5;
+			margin: 10px;
+            border-radius: 50%;
+		}
+
+        #red:hover{
+            opacity:1;
+        }
+
+
+		#yellow{
+			display: inline-block;
+			width:100px;
+			height:100px;
+			background-color:yellow;
+            opacity:0.5;
+			margin: 10px;
+            border-radius: 50%;
+		}
+
+        #yellow:hover{
+            opacity:1;
+        }
+
+		#green{
+			display: inline-block;
+			width:100px;
+			height:100px;
+			background-color:green;
+            opacity:0.5;
+			margin: 10px;
+            border-radius: 50%;
+		}
+
+        #green:hover{
+            opacity:1;
+        }
