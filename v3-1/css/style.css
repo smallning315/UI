@@ -27,7 +27,7 @@ li{
     position: absolute;
     z-index: 999;
     top: 60px;
-    right: 300px;
+    right: calc(50% - 160px);
     width: 20%;
     height: 50px;
     background-image: url(https://i.imgur.com/XQlbImV.png);
