@@ -343,7 +343,7 @@ ul {
 
 .calendar-main {
   background-color: #F3F4F6;
-  padding: 52px 32px;
+  padding: 52px 32px 0px 32px;
   min-height: calc(100vh - 56px);
   display: -webkit-box;
   display: -ms-flexbox;
