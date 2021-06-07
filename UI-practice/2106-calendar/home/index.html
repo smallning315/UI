@@ -1,0 +1,245 @@
+<html lang="tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI-calendar</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <ul class="navi">
+            <li><img src="img/icon-today-24.svg" alt="icon-today-24"></li>
+            <li><img src="img/icon-search-24.svg" alt="icon-search-24"></li>
+        </ul>
+        <div class="month-select">
+            <h2 id="select-text">October</h2>
+            <img src="./img/icon-arrow-24.svg" alt="arrow">
+			<select id="month" onchange="myNewFunction(this);">
+				<option>January</option>
+				<option>February</option>
+				<option>March</option>
+				<option>April</option>
+				<option>May</option>
+				<option>June</option>
+				<option>July</option>
+				<option>August</option>
+				<option>Septemper</option>
+				<option>October</option>
+				<option>November</option>
+				<option>December</option>
+			</select>
+        </div>
+    </header>
+    <main>
+        <div class="today-list">
+            <ul class="list">
+                <li>
+                    <div class="card">
+                        <h3>Project Kickoff</h3>
+                        <span>10 AM - 11 AM</span>
+                        <div class="people">
+                            <img src="img/image 11.png" alt="people1">
+                            <img src="img/image 12.png" alt="people2">
+                            <img src="img/image 13.png" alt="people3">
+                            <div class="button">Accept</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <h3>Breakfast with Julie</h3>
+                        <span>9 AM - 10 AM</span>
+                        <div class="people">
+                            <img src="img/image 14.png" alt="people1">
+                            <img src="img/image 15.png" alt="people2">
+                            <img src="img/image 16.png" alt="people3">
+                            <div class="button is-complete">Done</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <h3>Brithday Party</h3>
+                        <span>10 AM - 11 AM</span>
+                        <div class="people">
+                            <img src="img/image 17.png" alt="people1">
+                            <img src="img/image 18.png" alt="people2">
+                            <img src="img/image 19.png" alt="people3">
+                            <div class="button">Accept</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <ul class="date-list">
+            <li class="today">
+                <h2 class="date">FRI
+                    <strong>12</strong></h2>
+                <div class="infocard-group">
+                    <div class="infocard">
+                        <h3>Breakfast with Julie</h3>
+                        <span>9 AM - 10 AM</span>
+                    </div>
+                    <div class="infocard">
+                        <h3>Project Kickoff</h3>
+                        <span>10 AM - 11 AM</span>
+                    </div>
+                    <div class="infocard">
+                        <h3>Brithday Party</h3>
+                        <span>12 PM - 1 PM</span>
+                    </div>
+                </div>
+            </li>
+            <li class="day">
+                <h2 class="date">SAT
+                    <strong>13</strong></h2>
+                <div class="infocard-group">
+                    <div class="infocard">
+                        <h3>Breakfast with Julie</h3>
+                        <span>9 AM - 10 AM</span>
+                    </div>
+                    <div class="infocard">
+                        <h3>Project Kickoff</h3>
+                        <span>10 AM - 11 AM</span>
+                    </div>
+                    <div class="infocard">
+                        <h3>Brithday Party</h3>
+                        <span>12 PM - 1 PM</span>
+                    </div>
+                </div>
+            </li>
+            <li class="day">
+                <h2 class="date">SUN
+                    <strong>14</strong></h2>
+                <div class="infocard-group">
+                    <div class="infocard">
+                        <h3>Breakfast with Julie</h3>
+                        <span>9 AM - 10 AM</span>
+                    </div>
+                    <div class="infocard">
+                        <h3>Project Kickoff</h3>
+                        <span>10 AM - 11 AM</span>
+                    </div>
+                    <div class="infocard">
+                        <h3>Brithday Party</h3>
+                        <span>12 PM - 1 PM</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        <ul>
+            <li class="now">
+                <img src="img/icon-dashboard-24-active.svg" alt="dashboard">
+            </li>
+            <li>
+                <a href="../calendar/calendar.html"><img src="img/icon-calendar-24-normal.svg" alt="calendar"></a>
+            </li>
+            <li>
+                <img src="img/icon-member-24.svg" alt="member">
+            </li>
+        </ul>
+    </footer>
+    <div class="fab">
+        <div class="add-btn">
+            <div class="add"></div>
+        </div>
+    </div>
+    <div class="modal-addevent">   
+        <div class="modal-header">
+            <div class="title">
+                <img class="back" src="img/icon-arrow-left-24.svg" alt="back">
+                <h2>Add New Event</h2>
+            </div>
+            <div class="mui-textfield">
+                <input type="text" placeholder="Enter Title" class="mui--is-untouched mui--is-dirty mui--is-empty">
+            </div>
+        </div>
+            <ul class="modal-body">
+                <li class="collapse-show">
+                    <div class="event-date">
+                        <div class="date-head">
+                            <img src="img/icon-clock.svg" alt="time">
+                            <h2>Event Date</h2>
+                            <div class="switch-button">
+                                <input type="checkbox" class="ios-switch" id="b">
+                                <label for="b" class="switch">
+                                    <span class="text">Day</span>
+                                    <span class="sw"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="date-body">
+                            <section class="date-range">
+                                <div class="date-info">
+                                    <h3 class="date">
+                                        <span>From</span>
+                                        Nov 19,2020
+                                    </h3>
+                                    <span>14:30</span>
+                                </div>
+                                <div class="date-info">
+                                    <h3 class="date">
+                                        <span>to</span>
+                                        Nov 19,2020
+                                    </h3>
+                                    <span>15:30</span>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </li>
+                <li class="collapse-hide">
+                    <div class="add-location">
+                        <div class="date-head">
+                            <img src="img/icon-location.svg" alt="Location">
+                            <h2>Add Location</h2>
+                        </div>
+                    </div>
+                </li>
+                <li class="collapse-show">
+                    <div class="notice">
+                        <div class="date-head">
+                            <img src="img/icon-notice-24.svg" alt="notice">
+                            <h2>Event Date</h2>
+                            <img src="img/icon-close-24.svg" alt="close">
+                        </div>
+                        <div class="date-body">
+                            <img src="img/icon-add-24.svg" alt="add">
+                            <h2>Add Notifacation</h2>
+                    </div>
+                </li>
+                <li class="collapse-hide">
+                    <div class="add-location">
+                        <div class="date-head">
+                            <img src="img/icon-people-24.svg" alt="people">
+                            <h2>Add People</h2>
+                        </div>
+                    </div>
+                </li>
+                <div class="modal-footer">
+                    <div class="button back">
+                        <span>Save</span>
+                        <img src="img/icon-tick-24.svg" alt="check">
+                    </div>
+                </div>
+            </ul>
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+        function myNewFunction(element) {
+            var text = element.options[element.selectedIndex].text;
+            document.getElementById("select-text").innerHTML = text;
+        };
+        $(".add-btn").click(function () {
+        $(".modal-addevent").toggleClass("is-open");
+        });
+        $(".back").click(function () {
+        $(".modal-addevent").removeClass("is-open");
+    });
+    </script>
+</body>
+</html>
