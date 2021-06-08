@@ -1,0 +1,62 @@
+body{
+    margin: 0 auto;
+    padding: 10px;
+}
+
+@media(min-width:376px){
+    section {
+        width: 100%;
+        margin: 0 auto;
+    }
+   }
+
+@media(min-width:769px){
+    body{
+        max-width: 960px;
+    }
+
+    section{
+        vertical-align: top;
+        width: 48%;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+   }
+
+table {
+    width: 100%;
+    border: 1px solid;
+    text-align: center;
+    margin: 5px 0px;
+}
+
+.ad th,td {
+    border: 1px solid;
+}
+
+.ad .day{
+    background-color: blanchedalmond;
+}
+
+.ad td{
+    height: 120px;
+}
+
+.ad p{
+    font-weight: bold;
+}
+
+.ad .sale{
+    font-size: 1.25em;
+}
+
+.login{
+    text-align: center;
+}
+
+a {
+    background-color: cadetblue;
+    color: white;
+    padding: 5px 10px;
+}
