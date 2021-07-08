@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海關通關進口快遞</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+</head>
+<body>
+    <div class="index-content">
+        <div class="breadcrumbs">
+            <a href="">首頁</a>
+            <img src="img/icon-arrow-right.svg" alt="arrow-right">
+            <a href="">海關通關進口快遞</a>
+            <img src="img/icon-arrow-right.svg" alt="icon-arrow-right">
+            <a href="">簡易快遞查詢</a>
+        </div>
+        <main>
+            <aside>
+                <button class="fav-features">
+                    <img src="img/icon-star-active.svg" alt="icon-star-active">
+                    <span>我的常用功能</span>
+                </button>
+                <h2>海關通關進口快遞
+                </h2>
+                <ul>
+                    <li class="feature-normal">
+                        <img src="img/icon-list.svg" alt="icon-list">
+                        快遞業務申請
+                    </li>
+                    <li class="features-active">
+                        <img src="img/icon-search.svg" alt="icon-search">
+                        簡易快遞查詢
+                    </li>
+                </ul>
+            </aside>
+            <section>
+                <div class="head">
+                    <h1>簡易快遞查詢</h1>
+                    <img src="img/icon-star-normal.svg" alt="icon-star-normal">
+                </div>
+                <div class="search card">
+                    <div class="subtitle">
+                        <h2>篩選條件</h2>
+                        <button class="xs-btn">
+                            <img src="img/icon-arrow-up.svg" alt="icon-arrow-up">
+                            <span>收合</span>
+                        </button>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="dropdown">
+                                <label for="status">
+                                    <span>*</span>報單狀態
+                                </label>
+                                <select name="status">
+                                    <option>全部</option>
+                                    <option>選項一</option>
+                                    <option>選項二</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="input">
+                                <label for="year">
+                                    年度
+                                </label>
+                                <input type="text" id="year">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="input">
+                                <label for="number-last">
+                                    報單後五碼
+                                </label>
+                                <div class="row2">
+                                    <input type="text" id="number-last">
+                                    <span>~</span>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <label for="category">
+                                    報單類別
+                                </label>
+                                <select name="category">
+                                    <option>全部</option>
+                                    <option>選項一</option>
+                                    <option>選項二</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="input">
+                                <label for="number">
+                                    報單號碼
+                                </label>
+                                <input type="text" id="number">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="input">
+                                <label for="spec-number">
+                                    文件編號
+                                </label>
+                                <div class="row2">
+                                    <input type="text" id="spec-number">
+                                    <span>~</span>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="input">
+                                <label for="datepicker-start">
+                                    報單日期
+                                </label>
+                                <div class="row2">
+                                    <input type="text" id="datepicker-start" placeholder="YY/MM/DD">
+                                    <img src="img/icon-calendar.svg" alt="calendar" for="datepicker-start">
+                                    <span>~</span>
+                                    <input type="text" id="datepicker-end" placeholder="YY/MM/DD">
+                                    <img src="img/icon-calendar.svg" alt="calendar" for="datepicker-end">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <label for="category">
+                                    報關訊息
+                                </label>
+                                <select name="category">
+                                    <option>請選擇</option>
+                                    <option>選項一</option>
+                                    <option>選項二</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="input buy">
+                        <label for="buyer">
+                            買方資料
+                        </label>
+                        <div class="option-group">
+                            <div class="dropdown">
+                                <select name="buyer">
+                                    <option>買方統編</option>
+                                    <option>選項一</option>
+                                    <option>選項二</option>
+                                </select>
+                            </div>
+                            <div class="input">
+                                <input type="text" id="number-last">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input buy">
+                        <label for="buyer">
+                            賣方資料
+                        </label>
+                        <div class="option-group">
+                            <div class="dropdown">
+                                <select name="buyer">
+                                    <option>賣方中文名稱</option>
+                                    <option>選項一</option>
+                                    <option>選項二</option>
+                                </select>
+                            </div>
+                            <div class="input">
+                                <input type="text" id="number-last">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-set">
+                        <button class="secondary-btn s-btn">
+                            清除
+                        </button>
+                        <button class="primary-btn s-btn">
+                            查詢
+                        </button>
+                    </div>
+                </div>
+                <div class="list card">
+                    <div class="subtitle">
+                        <h2>報單清單</h2>
+                        <button class="xs-btn">
+                            <img src="img/icon-delete.svg" alt="icon-arrow-up">
+                            <span>刪除</span>
+                        </button>
+                    </div>
+                    <table>
+                        <tbody>
+                            <tr class="table-title">
+                                <td class="one"></td>
+                                <td class="two">
+                                    <p>狀態</p>
+                                </td>
+                                <td class="two">
+                                    <p>傳送</p>
+                                </td>
+                                <td class="six">
+                                    <p>主題單號碼</p>
+                                    <p>報單號碼</p>
+                                </td>
+                                <td class="three">
+                                    <p>報關日期</p>
+                                    <p>進口日期</p>
+                                </td>
+                                <td class="four">
+                                    <p>報關類別</p>
+                                    <p>報關編號</p>
+                                </td>
+                                <td class="fix">
+                                    <p>艙單號碼</p>
+                                    <p>船舶航次</p>
+                                </td>
+                                <td class="two">
+                                    <p>海關通關號碼</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="one">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="two">
+                                    <p>ZZZ</p>
+                                </td>
+                                <td class="two">
+                                </td>
+                                <td class="six">
+                                    <p>WNZ208801438</p>
+                                    <p>AX/_/09/441/E0488</p>
+                                </td>
+                                <td class="three">
+                                    <p>109/08/15</p>
+                                    <p>109/08/16</p>
+                                </td>
+                                <td class="four">
+                                    <p>X2</p>
+                                    <p>1090040123</p>
+                                </td>
+                                <td class="fix">
+                                    <p></p>
+                                    <p>2033S</p>
+                                </td>
+                                <td class="two">
+                                    <p>092209</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="one">
+                                    <input type="checkbox">
+                                </td>
+                                <td class="two">
+                                    <p>ZZZ</p>
+                                </td>
+                                <td class="two">
+                                </td>
+                                <td class="six">
+                                    <p>WNZ208801454</p>
+                                    <p>AX/_/09/441/E0420</p>
+                                </td>
+                                <td class="three">
+                                    <p>109/08/13</p>
+                                    <p>109/08/13</p>
+                                </td>
+                                <td class="four">
+                                    <p>X2</p>
+                                    <p>1090040377</p>
+                                </td>
+                                <td class="fix">
+                                    <p>2809</p>
+                                    <p>2033S/N</p>
+                                </td>
+                                <td class="two">
+                                    <p>09VC86</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <div class="show">
+                        <span>每頁</span>
+                        <select>
+                            <option>10</option>
+                            <option>15</option>
+                            <option>20</option>
+                        </select>
+                        <span>筆，共 3 筆</span>
+                    </div>
+                    <div class="page">
+                        <a href="">最前頁</a>
+                        <img src="img/icon-prev.svg" alt="prev">
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                        <span>/ 3 頁</span>
+                        <img src="img/icon-next.svg" alt="next">
+                        <a href="">最後頁</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+</body>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$( function() {
+  $( "#datepicker-start" ).datepicker();
+} );
+$('#datepicker-start').datepicker({dateFormat: "yy-mm-dd"});
+$( function() {
+  $( "#datepicker-end" ).datepicker();
+} );
+$('#datepicker-end').datepicker({dateFormat: "yy-mm-dd"});
+
+</script>
+</html>

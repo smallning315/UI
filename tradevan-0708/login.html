@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login">
+        <div class="login-content">
+        <h1>
+            登入
+        </h1>
+        <div class="input">
+            <label for="account">
+                使用者代號
+            </label>
+            <input type="text" id="account" placeholder="請輸入您的使用者代號">
+        </div>
+        <div class="input">
+            <label for="password">
+                使用者密碼
+            </label>
+            <input type="password" id="password" placeholder="6-10位英數字">
+        </div>
+        <div class="input">
+            <label for="code">
+                驗證碼
+            </label>
+            <div class="code">
+                <input type="text" id="code" placeholder="請輸入右側驗證碼">
+                <div class="img-code">
+                </div>
+                <a href=""><img src="img/icon-refresh.svg" alt="refresh"></a>
+            </div>
+        </div>
+        <div class="options">
+            <div class="rememberme">
+            <input type="checkbox" id="remember">
+            <label for="remember">
+                保持登入
+            </label>
+            </div>
+            <a href="">
+                忘記密碼
+            </a>
+        </div>
+        <button class="primary-btn" onclick="location.href='index.html'">
+            登入
+        </button>
+        </div>
+    </div>
+</body>
+</html>
