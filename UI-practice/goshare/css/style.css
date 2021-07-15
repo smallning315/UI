@@ -1,4 +1,4 @@
-@import url(/Users/eckareui/Desktop/html+css/UI-practice/goshare/scss/normalize.css);
+@import url(../scss/normalize.css);
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
